@@ -5,7 +5,7 @@ This is an observation submission template to use when submitting data to the AC
 Jump to sections:
 [Identifier](#identifier), [When](#when), [What](#what), [Who](#who), [Where](#where), [Observation details](#observation-details), [Collection data](#collection-data), [Source of data](#source-of-data), [Notes](#notes)
 
-Jump to fields: [REFNUM](#refnum)
+Jump to fields: [REFNUM](#refnum), [`YYYY`](#-yyyy-), [`MM`](#-mm-), [`DD`](#-dd-), [`yyyy2`](#-yyyy2-), [`mm2`](#-mm2-), [`dd2`](#-dd2-), [`obDATEverbatim`](#-obdateverbatim-), [`SCNAME`](#-scname-), [`COMMON NAME`](#-common-name-), [`NAMETEMP`](#-nametemp-), [`NOTETAX`](#-notetax-), [`OBSERVER`](#-observer-), [`IDENTBY`](#-identby-), [Where](#where), [`LATDEC`](#-latdec-), [`LONDEC`](#-londec-)
 
 ### Identifier
 #### `REFNUM`
@@ -49,7 +49,7 @@ Jump to fields: [REFNUM](#refnum)
 |           |   `yyyy2`      |
 | -------------  |-------------|
 | **Definition** | End year of a date range for observation |
-| **Comments**   | If your observation took place over a range of years, use this field for the end year. Use `YYYY` to record the start year of the range. |
+| **Comments**   | If your observation took place over a range of years, use this field for the end year. Use [`YYYY`](#-yyyy-) to record the start year of the range. |
 | **Examples**   | `2021`, `199X`, `19XX` |
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | **Allow:** Text length **Data:** equal to **Length:** 4 |
@@ -58,7 +58,7 @@ Jump to fields: [REFNUM](#refnum)
 |           |    `mm2`     |
 | -------------  |-------------|
 | **Definition** | End month of a date range for observation |
-| **Comments**   | If your observation took place over a range of months, use this field for the end month. Use `MM` to record the start month of the range.|
+| **Comments**   | If your observation took place over a range of months, use this field for the end month. Use [`MM`](#-mm-) to record the start month of the range.|
 | **Examples**   | `12`, `5` |
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | **Allow:** Text length **Data:** between **Minimum:** 1 **Maximum:** 2 |
@@ -67,7 +67,7 @@ Jump to fields: [REFNUM](#refnum)
 |           |    `dd2`     |
 | -------------  |-------------|
 | **Definition** | End day of a date range for observation |
-| **Comments**   |If your observation took place over a range of days, use this field for the end day. Use `DD` to record the start day of the range.|
+| **Comments**   |If your observation took place over a range of days, use this field for the end day. Use [`DD`](#-dd-) to record the start day of the range.|
 | **Examples**   |`31`, `2` |
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | **Allow:** Text length **Data:** between **Minimum:** 1 **Maximum:** 2 |
@@ -156,36 +156,50 @@ Jump to fields: [REFNUM](#refnum)
 | **Data type**   | DECIMAL NUMBER |
 | **Data validation restrictions**   | **Allow:** Decimal **Data:** between **Minimum:** -180 **Maximum:** 180 |
 
-|           |     LATDEC2     |
+#### `LATDEC2`
+|           |     `LATDEC2`     |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | If observation is a linear transect, add end point here |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   |`42.12345` |
+| **Data type**   | DECIMAL NUMBER |
+| **Data validation restrictions**   | **Allow:** Decimal **Data:** between **Minimum:** -90 **Maximum:** 90 |
 
-
-|           |     LONDEC2     |
+#### `LONDEC2`
+|           |     `LONDEC2`   |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | If observation is a linear transect, add end point here |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   |`-64.12345` |
+| **Data type**   | DECIMAL NUMBER |
+| **Data validation restrictions**   | **Allow:** Decimal **Data:** between **Minimum:** -180 **Maximum:** 180 |
 
+#### `_NOTELOCcoordinates`
 |           |   `_NOTELOCcoordinates`       |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Basis of coordinates and/or remark upon extent |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   | `geolocation from GPS`|
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |     LOCUNCM     |
+#### `LOCUNCM`
+|           |     `LOCUNCM`     |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** |Estimated horizontal uncertainty distance of location (metres)  |
+| **Comments**   |Use '10' for GPS locations|
+| **Examples**   | `10`, `50`, `500`, `1000` |
+| **Data type**   | POSITIVE INTEGER |
+| **Data validation restrictions**   | **Allow:** Whole number **Data:** greater than or equal to **Minimum:** 10 |
 
+#### `_NOTELOClocuncm`
 |           |     `_NOTELOClocuncm`     |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Further information on location uncertainty  |
 | **Comments**   |       |
 | **Examples**   | |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
 |           |     SURVEYSITE     |
 | -------------  |-------------|
