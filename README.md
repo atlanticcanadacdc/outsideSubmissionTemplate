@@ -1,19 +1,36 @@
 # Observation Submission Template
+
 This is an observation submission template to use when submitting data to the AC CDC.
 
-|           |    REFNUM      |
+Jump to sections
+- [Identifier](#identifier)
+- [When](#when)
+- [What](#what)
+- [Who](#who)
+- [Where](#where)
+- [Observation details](#observation-details)
+- [Collection data](#collection-data)
+- [Source of data](#source-of-data)
+- [Notes](#notes)
+
+
+### Identifier
+
+| Field name|    REFNUM      |
 | -------------  |-------------|
 | **Definition** | Record ID (e.g., field or collection number) assigned by observer.|
 | **Comments**   | If the field is used consistently by observers, it can be used to join, merge or relate records to existing records in our database. It can also be used by the observer to match data to their personal datasets.      |
 | **Examples**   | `TP1234`, `NS-RP025-2_617`, `Tupper-Barrens_525`|
 
-|           |    YYYY      |
+### When
+
+| Field name |    YYYY      |
 | -------------  |-------------|
 | **Definition** |  |
 | **Comments**   |       |
 | **Examples**   | |
 
-|           |     MM     |
+| Field name |     MM     |
 | -------------  |-------------|
 | **Definition** |  |
 | **Comments**   |       |
@@ -44,6 +61,8 @@ This is an observation submission template to use when submitting data to the AC
 | **Comments**   |       |
 | **Examples**   | |
 
+### What
+
 |           |    SCNAME      |
 | -------------  |-------------|
 | **Definition** |  |
@@ -68,6 +87,8 @@ This is an observation submission template to use when submitting data to the AC
 | **Comments**   |       |
 | **Examples**   | |
 
+### Who
+
 |           | OBSERVER         |
 | -------------  |-------------|
 | **Definition** | Person who collected datum in field [lastname1, firstname1; lastname2, firstname2] |
@@ -79,6 +100,8 @@ This is an observation submission template to use when submitting data to the AC
 | **Definition** |  |
 | **Comments**   |       |
 | **Examples**   | |
+
+### Where
 
 |           |    LATDEC      |
 | -------------  |-------------|
@@ -123,7 +146,6 @@ This is an observation submission template to use when submitting data to the AC
 | **Comments**   |       |
 | **Examples**   | |
 
-
 |           |     SURVEYSITE     |
 | -------------  |-------------|
 | **Definition** |  |
@@ -148,7 +170,6 @@ This is an observation submission template to use when submitting data to the AC
 | **Comments**   |       |
 | **Examples**   | |
 
-
 |           |    SITECODE      |
 | -------------  |-------------|
 | **Definition** |  |
@@ -160,6 +181,8 @@ This is an observation submission template to use when submitting data to the AC
 | **Definition** |  |
 | **Comments**   |       |
 | **Examples**   | |
+
+### Observation details
 
 |           |    OBEVID      |
 | -------------  |-------------|
@@ -253,6 +276,7 @@ This is an observation submission template to use when submitting data to the AC
 | **Comments**   |       |
 | **Examples**   | |
 
+### Collection data
 
 |           |   COLLECTION       |
 | -------------  |-------------|
@@ -278,12 +302,15 @@ This is an observation submission template to use when submitting data to the AC
 | **Comments**   |       |
 | **Examples**   | |
 
+### Source of data
+
 |           |   BESTSOURCE       |
 | -------------  |-------------|
 | **Definition** |  |
 | **Comments**   |       |
 | **Examples**   | |
 
+### Notes
 
 |           |    NOTE1      |
 | -------------  |-------------|
