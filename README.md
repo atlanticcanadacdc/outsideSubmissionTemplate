@@ -5,7 +5,7 @@ This is an observation submission template to use when submitting data to the AC
 Jump to sections:
 [Identifier](#identifier), [When](#when), [What](#what), [Who](#who), [Where](#where), [Observation details](#observation-details), [Collection data](#collection-data), [Source of data](#source-of-data), [Notes](#notes)
 
-Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#-yyyy-), [`MM`](#-mm-), [`DD`](#-dd-), [`yyyy2`](#-yyyy2-), [`mm2`](#-mm2-), [`dd2`](#-dd2-), [`obDATEverbatim`](#-obdateverbatim-), [`SCNAME`](#-scname-), [`COMMON NAME`](#-common-name-), [`NAMETEMP`](#-nametemp-), [`NOTETAX`](#-notetax-), [`OBSERVER`](#-observer-), [`IDENTBY`](#-identby-), [`LATDEC`](#-latdec-), [`LONDEC`](#-londec-)
+Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), [`yyyy2`](#yyyy2), [`mm2`](#mm2), [`dd2`](#dd2), [`obDATEverbatim`](#obdateverbatim), [`SCNAME`](#scname), [`COMMON NAME`](#common-name), [`NAMETEMP`](#nametemp), [`NOTETAX`](#notetax), [`OBSERVER`](#observer), [`IDENTBY`](#identby), [`LATDEC`](#latdec), [`LONDEC`](#londec)
 
 ### Identifier
 #### `REFNUM`
@@ -49,7 +49,7 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#-yyyy-), [`MM`](#-mm-), [`DD`](#-
 |           |   `yyyy2`      |
 | -------------  |-------------|
 | **Definition** | End year of a date range for observation |
-| **Comments**   | If your observation took place over a range of years, use this field for the end year. Use [`YYYY`](#-yyyy-) to record the start year of the range. |
+| **Comments**   | If your observation took place over a range of years, use this field for the end year. Use [`YYYY`](#yyyy) to record the start year of the range. |
 | **Examples**   | `2021`, `199X`, `19XX` |
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | **Allow:** Text length **Data:** equal to **Length:** 4 |
@@ -58,7 +58,7 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#-yyyy-), [`MM`](#-mm-), [`DD`](#-
 |           |    `mm2`     |
 | -------------  |-------------|
 | **Definition** | End month of a date range for observation |
-| **Comments**   | If your observation took place over a range of months, use this field for the end month. Use [`MM`](#-mm-) to record the start month of the range.|
+| **Comments**   | If your observation took place over a range of months, use this field for the end month. Use [`MM`](#mm) to record the start month of the range.|
 | **Examples**   | `12`, `5` |
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | **Allow:** Text length **Data:** between **Minimum:** 1 **Maximum:** 2 |
@@ -67,7 +67,7 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#-yyyy-), [`MM`](#-mm-), [`DD`](#-
 |           |    `dd2`     |
 | -------------  |-------------|
 | **Definition** | End day of a date range for observation |
-| **Comments**   |If your observation took place over a range of days, use this field for the end day. Use [`DD`](#-dd-) to record the start day of the range.|
+| **Comments**   |If your observation took place over a range of days, use this field for the end day. Use [`DD`](#dd) to record the start day of the range.|
 | **Examples**   |`31`, `2` |
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | **Allow:** Text length **Data:** between **Minimum:** 1 **Maximum:** 2 |
