@@ -1,6 +1,6 @@
 # Observation Submission Template
 
-This is an observation submission template to use when submitting data to the AC CDC.
+This is an observation submission template to use when providing data to the AC CDC.
 
 Jump to sections:
 [Identifier](#identifier), [When](#when), [What](#what), [Who](#who), [Where](#where), [Observation details](#observation-details), [Collection data](#collection-data), [Source of data](#source-of-data), [Notes](#notes)
