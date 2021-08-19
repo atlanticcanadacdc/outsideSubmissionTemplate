@@ -16,31 +16,35 @@ Jump to sections
 
 ### Identifier
 
-| Field name|    REFNUM      |
+| Field name|    `REFNUM`      |
 | -------------  |-------------|
 | **Definition** | Record ID (e.g., field or collection number) assigned by observer.|
 | **Comments**   | If the field is used consistently by observers, it can be used to join, merge or relate records to existing records in our database. It can also be used by the observer to match data to their personal datasets.      |
 | **Examples**   | `TP1234`, `NS-RP025-2_617`, `Tupper-Barrens_525`|
+| **Data type**   | TEXT |
 
 ### When
 
-| Field name |    YYYY      |
+| Field name |    `YYYY`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** |Year of observation  |
+| **Comments**   |    Can include ‘X’ characters for any digits that are uncertain. When the observation was made for multiple, known, years between these dates submit a record for each known year. |
+| **Examples**   | `2021`, `199X`, `19XX` |
+| **Data type**   | TEXT |
 
-| Field name |     MM     |
+| Field name |     `MM`    |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | Month of observation |
+| **Comments**   | Range of months: 5-7     |
+| **Examples**   | `12` |
+| **Data type**   | TEXT |
 
-|           |     DD     |
+|           |     `DD`     |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Day of observation |
 | **Comments**   |       |
 | **Examples**   | |
+| **Data type**   | TEXT |
 
 |           |   yyyy2       |
 | -------------  |-------------|
