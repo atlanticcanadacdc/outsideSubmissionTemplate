@@ -5,7 +5,7 @@ This is an observation submission template to use when submitting data to the AC
 Jump to sections:
 [Identifier](#identifier), [When](#when), [What](#what), [Who](#who), [Where](#where), [Observation details](#observation-details), [Collection data](#collection-data), [Source of data](#source-of-data), [Notes](#notes)
 
-Jump to fields: [REFNUM](#refnum), [`YYYY`](#-yyyy-), [`MM`](#-mm-), [`DD`](#-dd-), [`yyyy2`](#-yyyy2-), [`mm2`](#-mm2-), [`dd2`](#-dd2-), [`obDATEverbatim`](#-obdateverbatim-), [`SCNAME`](#-scname-), [`COMMON NAME`](#-common-name-), [`NAMETEMP`](#-nametemp-), [`NOTETAX`](#-notetax-), [`OBSERVER`](#-observer-), [`IDENTBY`](#-identby-), [Where](#where), [`LATDEC`](#-latdec-), [`LONDEC`](#-londec-)
+Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#-yyyy-), [`MM`](#-mm-), [`DD`](#-dd-), [`yyyy2`](#-yyyy2-), [`mm2`](#-mm2-), [`dd2`](#-dd2-), [`obDATEverbatim`](#-obdateverbatim-), [`SCNAME`](#-scname-), [`COMMON NAME`](#-common-name-), [`NAMETEMP`](#-nametemp-), [`NOTETAX`](#-notetax-), [`OBSERVER`](#-observer-), [`IDENTBY`](#-identby-), [`LATDEC`](#-latdec-), [`LONDEC`](#-londec-)
 
 ### Identifier
 #### `REFNUM`
