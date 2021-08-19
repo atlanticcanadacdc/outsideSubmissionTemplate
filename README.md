@@ -2,122 +2,159 @@
 
 This is an observation submission template to use when submitting data to the AC CDC.
 
-Jump to sections
-- [Identifier](#identifier)
-- [When](#when)
-- [What](#what)
-- [Who](#who)
-- [Where](#where)
-- [Observation details](#observation-details)
-- [Collection data](#collection-data)
-- [Source of data](#source-of-data)
-- [Notes](#notes)
+Jump to sections:
+[Identifier](#identifier), [When](#when), [What](#what), [Who](#who), [Where](#where), [Observation details](#observation-details), [Collection data](#collection-data), [Source of data](#source-of-data), [Notes](#notes)
 
+Jump to fields: [REFNUM](#refnum)
 
 ### Identifier
-
-| Field name|    `REFNUM`      |
+#### `REFNUM`
+| |`REFNUM`|
 | -------------  |-------------|
 | **Definition** | Record ID (e.g., field or collection number) assigned by observer.|
 | **Comments**   | If the field is used consistently by observers, it can be used to join, merge or relate records to existing records in our database. It can also be used by the observer to match data to their personal datasets.      |
 | **Examples**   | `TP1234`, `NS-RP025-2_617`, `Tupper-Barrens_525`|
 | **Data type**   | TEXT |
+| **Data validation restrictions**   | Each `REFNUM` value must be unique. |
 
 ### When
-
-| Field name |    `YYYY`      |
+#### `YYYY`
+| |    `YYYY`      |
 | -------------  |-------------|
 | **Definition** |Year of observation  |
 | **Comments**   |    Can include ‘X’ characters for any digits that are uncertain. When the observation was made for multiple, known, years between these dates submit a record for each known year. |
 | **Examples**   | `2021`, `199X`, `19XX` |
 | **Data type**   | TEXT |
+| **Data validation restrictions**   | **Allow:** Text length **Data:** equal to **Length:** 4 |
 
-| Field name |     `MM`    |
+#### `MM`
+| |     `MM`    |
 | -------------  |-------------|
 | **Definition** | Month of observation |
-| **Comments**   | Range of months: 5-7     |
-| **Examples**   | `12` |
+| **Comments**   | If missing use `XX`|
+| **Examples**   | `12`, `XX`, `5` |
 | **Data type**   | TEXT |
+| **Data validation restrictions**   | **Allow:** Text length **Data:** between **Minimum:** 1 **Maximum:** 2 |
 
+#### `DD`
 |           |     `DD`     |
 | -------------  |-------------|
 | **Definition** | Day of observation |
-| **Comments**   |       |
-| **Examples**   | |
+| **Comments**   |If missing use `XX`|
+| **Examples**   | `31`, `2`, `XX` |
 | **Data type**   | TEXT |
+| **Data validation restrictions**   | **Allow:** Text length **Data:** between **Minimum:** 1 **Maximum:** 2 |
 
-|           |   yyyy2       |
+#### `yyyy2`
+|           |   `yyyy2`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | End year of a date range for observation |
+| **Comments**   | If your observation took place over a range of years, use this field for the end year. Use `YYYY` to record the start year of the range. |
+| **Examples**   | `2021`, `199X`, `19XX` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | **Allow:** Text length **Data:** equal to **Length:** 4 |
 
-|           |    mm2      |
+#### `mm2`
+|           |    `mm2`     |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | End month of a date range for observation |
+| **Comments**   | If your observation took place over a range of months, use this field for the end month. Use `MM` to record the start month of the range.|
+| **Examples**   | `12`, `5` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | **Allow:** Text length **Data:** between **Minimum:** 1 **Maximum:** 2 |
 
-
-|           |    dd2      |
+#### `dd2`
+|           |    `dd2`     |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | End day of a date range for observation |
+| **Comments**   |If your observation took place over a range of days, use this field for the end day. Use `DD` to record the start day of the range.|
+| **Examples**   |`31`, `2` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | **Allow:** Text length **Data:** between **Minimum:** 1 **Maximum:** 2 |
+
+#### `obDATEverbatim`
+|           |    `obDATEverbatim`     |
+| -------------  |-------------|
+| **Definition** | This field can hold any text description of the date or details about uncertainty |
+| **Comments**   ||
+| **Examples**   |`spring 2010`, `collected sometime between 4 June and 23 July` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   |  |
 
 ### What
-
-|           |    SCNAME      |
+#### `SCNAME`
+|           |    `SCNAME`      |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Scientific name as given by reference |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   | `Clemmys insculpta` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |     COMMON NAME     |
+#### `COMMON NAME`
+|           |     `COMMON NAME`     |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | English name |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   |`Wood Turtle` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |   NAMETEMP       |
+#### `NAMETEMP`
+|           |   `NAMETEMP`       |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
+| **Definition** | Temporary name. Use this field to store names you are uncertain about and names not yet identified to the species level.  |
+| **Comments**   |  Would include chemical tests used in lichen identification. If we make change to ID, details are included here. If changed by others (e.g., herbarium) could go in IDENTBY. |
 | **Examples**   | |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   |`Poa`,  `indet.`|
 
-|           |    NOTETAX      |
+#### `NOTETAX`
+|           |    `NOTETAX`      |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Relevant information on identification |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   | `orig. ID C. subdentata (=C. spinigera)`, `Hypericum boreale/mutilum` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
 ### Who
-
-|           | OBSERVER         |
+#### `OBSERVER`
+|           | `OBSERVER`       |
 | -------------  |-------------|
-| **Definition** | Person who collected datum in field [lastname1, firstname1; lastname2, firstname2] |
-| **Comments**   |       |
+| **Definition** | Person who collected datum in field |
+| **Comments**   | Use this format `lastname1, firstname1; lastname2, firstname2`. Use `unknown` only if the observer is confidently known to be unknown. Otherwise, use `blank`. If the first name or last name is missing, use a `?` to indicate a missing name. |
 | **Examples**   | `Blaney, Sean; Robinson, Sarah; Mazerolle, David`, `Blaney, Sean; et al.`, `unknown`, `<blank>`, `Cochran, ?` `Atlasser ID: <number>`, `Blaney, Sean; Robinson, Sarah; Mazerolle, David, plus 8 observers`|
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |    IDENTBY      |
+#### `IDENTBY`
+|           |    `IDENTBY`     |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | Person identifying record (esp. where diff. from observer) |
+| **Comments**   | If history of identification (e.g., changes over time), include this information here. Can contain dates and institution info. Format names as in [OBSERVER](#observer).|
+| **Examples**   |`Blaney, Sean` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
 ### Where
-
-|           |    LATDEC      |
+#### `LATDEC`
+|           |    `LATDEC`      |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Latitude of observation in Decimal Degrees |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   |`42.12345` |
+| **Data type**   | DECIMAL NUMBER |
+| **Data validation restrictions**   | **Allow:** Decimal **Data:** between **Minimum:** -90 **Maximum:** 90 |
 
+#### `LONDEC`
 |           |     LONDEC     |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Longitude of observation in Decimal Degrees |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   |`-64.12345` |
+| **Data type**   | DECIMAL NUMBER |
+| **Data validation restrictions**   | **Allow:** Decimal **Data:** between **Minimum:** -180 **Maximum:** 180 |
 
 |           |     LATDEC2     |
 | -------------  |-------------|
