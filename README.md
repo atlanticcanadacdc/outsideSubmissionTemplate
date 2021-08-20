@@ -318,7 +318,7 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), 
 |           |  `OBACTIV`        |
 | -------------  |-------------|
 | **Definition** | Activity or behavior observed |
-| **Comments**   |  For birds use formal MBBA breeding evidence statements found in file      |
+| **Comments**   |  For birds use formal MBBA breeding evidence statements found in file [OBACTIV_bird_strings.csv]     |
 | **Examples**   | `just molted`, `Confirmed breeding: Adult carrying food. 5 adults hunting and bringing food back to nest sites`, `terrestrial, stationary, in sun`, `Nesting`, `mating` |
 | **Data type**   | TEXT |
 | **Data validation restrictions**   ||
