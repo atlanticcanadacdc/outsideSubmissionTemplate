@@ -456,11 +456,11 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), 
 
 ### Can I provide my data to you using old versions of your submission template?
 
-We will accept data curated in older versions of our submission template in special cases. Please do your best to collect and curate your data using our newest template.
+We will accept data curated in older versions of our submission template in special cases. Please do your best to collect and curate your data using our newest template!
 
 ### What do I do if my coordinates are not in decimal degrees?
 
-Please provide us the data in whatever format you have. We will convert your data into decimal degrees. If you provide your data in UTM format, don't forget to provide UTM zone data and coordinate system data.
+Please provide us the data in whatever format you have. We will convert your data into decimal degrees. If you provide your data in UTM format, don't forget to provide UTM zone data and coordinate system data. Please note that we prefer data in decimal degrees!
 
 ### I keep getting popups from Excel that prevent me from entering data into the template
 
