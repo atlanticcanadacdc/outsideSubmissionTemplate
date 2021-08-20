@@ -3,7 +3,7 @@
 This is an observation submission template to use when providing data to the AC CDC.
 
 Jump to sections:
-[Identifier](#identifier), [When](#when), [What](#what), [Who](#who), [Where](#where), [Observation details](#observation-details), [Collection data](#collection-data), [Source of data](#source-of-data), [Notes](#notes)
+[Identifier](#identifier), [When](#when), [What](#what), [Who](#who), [Where](#where), [Observation details](#observation-details), [Collection data](#collection-data), [Notes](#notes)
 
 Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), [`yyyy2`](#yyyy2), [`mm2`](#mm2), [`dd2`](#dd2), [`obDATEverbatim`](#obdateverbatim), [`SCNAME`](#scname), [`COMMON NAME`](#common-name), [`NAMETEMP`](#nametemp), [`NOTETAX`](#notetax), [`OBSERVER`](#observer), [`IDENTBY`](#identby), [`LATDEC`](#latdec), [`LONDEC`](#londec)
 
@@ -12,7 +12,7 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), 
 | |`REFNUM`|
 | -------------  |-------------|
 | **Definition** | Record ID (e.g., field or collection number) assigned by observer.|
-| **Comments**   | If the field is used consistently by observers, it can be used to join, merge or relate records to existing records in our database. It can also be used by the observer to match data to their personal datasets.      |
+| **Comments**   | If the field is used consistently by observers, it can be used to join, merge or relate records to existing records in our database. It can also be used by the observer to match data to personal datasets.      |
 | **Examples**   | `TP1234`, `NS-RP025-2_617`, `Tupper-Barrens_525`|
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | Each `REFNUM` value must be unique. |
@@ -201,181 +201,250 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), 
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | |
 
-|           |     SURVEYSITE     |
+#### `SURVEYSITE`
+|           |     `SURVEYSITE`     |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | Major landmark: permanent town or land feature nearby. Single placename of general locality, especially designated or proposed Protected Area. |
+| **Comments**   |    No abbreviations. `SURVEYSITE` must be a placename. |
+| **Examples**   | `Saint John River` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
+#### `_NOTELOCsurveysite`
 |           |    `_NOTELOCsurveysite`      |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Further information about survey site.  |
 | **Comments**   |       |
 | **Examples**   | |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |     DIRECTIONS     |
+#### `DIRECTIONS`
+|           |     `DIRECTIONS`     |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Detailed instructions for re-finding observation. Distance and direction from a landmark |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   | `S of Gagetown, 100m upstream from mouth of Mud Creek` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
+#### `_NOTELOCdirections`
 |           |   `_NOTELOCdirections`       |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Further information about directions  |
 | **Comments**   |       |
 | **Examples**   | |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |    SITECODE      |
+#### `SITECODE`
+|           |    `SITECODE`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
+| **Definition** | Site reference code specific to the project or data collection event |
+| **Comments**   |   Helps link observation back to data provider's study sites    |
 | **Examples**   | |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |    ELEVmin      |
+#### `ELEVmin`
+|           |    `ELEVmin`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** |Elevation in metres  |
+| **Comments**   |    Should be integer between 0 and 820 if in Maritimes   |
+| **Examples**   |`70`, `152`, `30`, `9` |
+| **Data type**   | POSITIVE INTEGER |
+| **Data validation restrictions**   | **Allow:** Whole number **Data:** greater than or equal to **Minimum:** 0 |
 
 ### Observation details
-
-|           |    OBEVID      |
+#### `OBEVID`
+|           |    `OBEVID`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | Nature of the evidence associated with the observation  |
+| **Comments**   |  Default is ‘sight record’     |
+| **Examples**   | See **Data validation restrictions**  
+| **Data type**   | LOWERCASE TEXT |
+| **Data validation restrictions**   | Allowable values are: `sight record`, `specimen`,`photo`,`specimen;photo`,`aural detection`,`sound recording`,`video recording`,`indirect (e.g., scat, pellets, tracks, browse)`,`perennial nest site`,`iNaturalist`|
 
-|           |    OBABUN      |
+#### `OBABUN`
+|           |    `OBABUN `   |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Verbal description of frequency with reference to the abundance at a specific point location |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   | See **Data validation restrictions**  
+| **Data type**   | LOWERCASE TEXT |
+| **Data validation restrictions**   | Allowable values are: `abundant`,`locally common`,`scattered`,`rare`|
 
-
-|           |    OBABUNSITE      |
+#### `OBABUNSITE`
+|           |    `OBABUNSITE`      |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Verbal description of frequency with reference to the larger survey area |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   | See **Data validation restrictions**  
+| **Data type**   | LOWERCASE TEXT |
+| **Data validation restrictions**   | Allowable values are: `common within survey site`,`rare within survey site`,`uncommon within survey site`|
 
-|           |   OBCOUNT       |
+#### `OBCOUNT`
+|           |   `OBCOUNT`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | The number of individuals/units (e.g,. The number of adults, young, eggs) |
+| **Comments**   |   Use special characters like ~, +, < only when absolutely necessary.    |
+| **Examples**   | `10-50`, `1`, `>100` |
+| **Data type**   | POSITIVE INTEGER, sometimes TEXT |
+| **Data validation restrictions**   ||
 
-|           |   OBASSP       |
+#### `OBASSP`
+|           |   `OBASSP`       |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | Associated Species; species observed with taxon recorded |
+| **Comments**   |   Use scientific names; separate species by semicolon. Include host or nectaring plant species here if available; can also add to [`HABITAT`](#habitat) if deemed appropriate |
+| **Examples**   | `Abies balsamea; Picea rubens; Acer rubrum; Betula allegheniensis; Betula papyrifera; Onoclea sensibilis; Matteuccia struthiopteris`, `Leucodon brachypus`, `Thuja occidentalis; Betula papyrifera; Picea glauca`, `Nectaring on Malus pumila` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   ||
 
-|           |     OBDESC     |
+#### `OBDESC`
+|           |     `OBDESC`     |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | Description of state, condition or appearance of individual/group |
+| **Comments**   |   E.g., patch dimensions, number of clumps, interesting markings or state of individual, e.g. 'pregnant'. Behavior and activity go in [`OBACTIV`](#obactiv)    |
+| **Examples**   | `corticolous`, `collected incidentally with CJC 4129`, `only 1 or 2 populations oberved`|
+| **Data type**   | TEXT |
+| **Data validation restrictions**   ||
 
-|           |  OBACTIV        |
+#### `OBACTIV`
+|           |  `OBACTIV`        |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | Activity or behavior observed |
+| **Comments**   |  For birds use formal MBBA breeding evidence statements found in file      |
+| **Examples**   | `just molted`, `Confirmed breeding: Adult carrying food. 5 adults hunting and bringing food back to nest sites`, `terrestrial, stationary, in sun`, `Nesting`, `mating` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   ||
 
-|           |   OBPHEN       |
+#### `OBPHEN`
+|           |   `OBPHEN`       |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | Phenology (bud, flower, seed; age or life stage) |
+| **Comments**   |  Full names: adult, juvenile, immature     |
+| **Examples**   | `adult`, `mature`, `flowering`, `fruiting`, `senescent` |
+| **Data type**   | LOWERCASE TEXT |
+| **Data validation restrictions**   | Lowercase text only |
 
-|           |    OBSEX      |
+#### `OBSEX`
+|           |    `OBSEX`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | Gender of taxon |
+| **Comments**   |  Full words: male; female; 1 male, 2 females    |
+| **Examples**   | `female`, `male`, `1 male, 1 female`|
+| **Data type**   | LOWERCASE TEXT |
+| **Data validation restrictions**   | Lowercase text only |
 
-|           |    HABITAT      |
+#### `HABITAT`
+|           |    `HABITAT`     |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Habitat in which the taxon was found |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   |`gravel island in river` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-
-|           |    OBTHREAT      |
+#### `OBTHREAT`
+|           |    `OBTHREAT`     |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Information about natural or anthropogenic threats to the identified taxon at the place it was observed |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   |`numerous ATV tracks through nesting area`, `tree harvesting edge of swamp`, `vegetation control under powerline` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |   ENVIRONMENTAL       |
+#### `ENVIRONMENTAL`
+|           |   `ENVIRONMENTAL`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | A general field for any environmental conditions it is deemed valuable to retain |
+| **Comments**   |  Cloud cover, temperature, wind     |
+| **Examples**   | `temp: 23C; cloud cover: partial`|
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |    URL      |
+#### `URL`
+|           |    `URL`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
+| **Definition** | URL of associated record for iNat, eBird checklist if applicable.  |
+| **Comments**   |  For the record, not for a photo associated with the record     |
 | **Examples**   | |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |    PROJECT      |
+#### `PROJECT`
+|           |    `PROJECT`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
+| **Definition** | Name for project for which the data were collected.  |
+| **Comments**   |   Helpful for sorting collections of data in our database   |
 | **Examples**   | |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |    PROTOCOL      |
+#### `PROTOCOL`
+|           |    `PROTOCOL`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** | Type of survey used for data collection |
+| **Comments**   |   This provides an indication of biases and level of search effort    |
+| **Examples**   | See **Data validation restrictions**  
+| **Data type**   | LOWERCASE TEXT |
+| **Data validation restrictions**   | Allowable values are: `incidental`,`point count`,`area search`,`trapping`,`songmeter`,`eBird - Incidental`,`eBird - Travelling`|
 
 ### Collection data
-
-|           |   COLLECTION       |
+#### `COLLECTION`
+|           |   `COLLECTION`       |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Definition** |Museum or institution holding specimen  |
+| **Comments**   | Abbreviated as: {ACAD, MICH, NBM…}       |
+| **Examples**   |`NFM`, `ACAD, NSPM` `UNB`|
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |   COLLNUM       |
+#### `COLLNUM`
+|           |   `COLLNUM`       |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Field or collection number assigned by the observer |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   |`TP1234`, `3907`, `6365322-22-NOWA` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |     COLLDUP     |
+#### `COLLDUP`
+|           |     `COLLDUP`     |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Number of duplicates of the specimen |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   | `1`, `2`|
+| **Data type**   | POSITIVE INTEGER |
+| **Data validation restrictions**   |  **Allow:** Whole number **Data:** greater than **Minimum:** 0|
 
-|           |   ACCNUM       |
+#### `ACCNUM`
+|           |   `ACCNUM`       |
 | -------------  |-------------|
-| **Definition** |  |
+| **Definition** | Museum Accession number (assigned by museum/institution) |
 | **Comments**   |       |
-| **Examples**   | |
+| **Examples**   |`NBM-00484`, `B144361`, `OBS504457741` |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-### Source of data
-
-|           |   BESTSOURCE       |
-| -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
-| **Examples**   | |
 
 ### Notes
-
-|           |    NOTE1      |
+#### `NOTE1`
+|           |    `NOTE1`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
+| **Definition** | Miscellaneous information of value that cannot be entered in other fields |
+| **Comments**   |  Ensure these do not contain values that fit in other standard fields    |
 | **Examples**   | |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
-|           |    NOTE2      |
+#### `NOTE2`
+|           |    `NOTE2`      |
 | -------------  |-------------|
-| **Definition** |  |
-| **Comments**   |       |
+| **Definition** | Miscellaneous information of value that cannot be entered in other fields |
+| **Comments**   |   Ensure these do not contain values that fit in other standard fields      |
 | **Examples**   | |
+| **Data type**   | TEXT |
+| **Data validation restrictions**   | |
 
