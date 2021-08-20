@@ -109,9 +109,9 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), 
 | -------------  |-------------|
 | **Definition** | Temporary name. Use this field to store names you are uncertain about and names not yet identified to the species level.  |
 | **Comments**   |  Would include chemical tests used in lichen identification. If we make change to ID, details are included here. If changed by others (e.g., herbarium) could go in IDENTBY. |
-| **Examples**   | |
+| **Examples**    |`Poa`,  `indet.`|
 | **Data type**   | TEXT |
-| **Data validation restrictions**   |`Poa`,  `indet.`|
+| **Data validation restrictions**    | |
 
 #### `NOTETAX`
 |           |    `NOTETAX`      |
