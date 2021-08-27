@@ -85,6 +85,26 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), 
 | **Data type**   | TEXT |
 | **Data validation restrictions**   |  |
 
+#### `OBTIME`
+|           |    `OBTIME`     |
+| -------------  |-------------|
+| **Definition** | Time of observation of or start time of observation period |
+| **Comments**   | hh:mm or hh:mm:ss format. if time is a range of hours enter as:
+[OBTIME] = 19:00, [OBTIMEend] = 21:00. It time is in a UTC format, convert based on timezone in which the data were collected. |
+| **Example|
+| **Data type**   | hh:mm or hh:mm:ss |
+| **Data validation restrictions**   |  |
+
+#### `OBTIMEend`
+|           |    `OBTIME`     |
+| -------------  |-------------|
+| **Definition** | End of observation period |
+| **Comments**   | hh:mm or hh:mm:ss format. if time is a range of hours enter as:
+[OBTIME] = 19:00, [OBTIMEend] = 21:00. It time is in a UTC format, convert based on timezone in which the data were collected. |
+| **Examples**   | |
+| **Data type**   | hh:mm or hh:mm:ss |
+| **Data validation restrictions**   |  |
+
 ### What
 #### `SCNAME`
 |           |    `SCNAME`      |
@@ -466,7 +486,7 @@ Please provide us the data in whatever format you have. We will convert your dat
 
 Popups occur when the data you enter does not match the data validation restrictions on the field. First, consult the field metadata. Then, clean your data so that it confirms to our data validation rules. As a last resort, you can adjust the data validation rules in the template file. Learn more about Excel data validation by reading the help file here: https://support.microsoft.com/en-us/office/apply-data-validation-to-cells-29fecbcc-d1b9-42c1-9d76-eff3ce5f7249
 
-### I don't understand the metadata! Help! 
+### I don't understand the metadata! Help!
 
 Email us with questions or if you need help! See http://accdc.com//en/contact-us.html.
 
