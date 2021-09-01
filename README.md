@@ -9,7 +9,7 @@ Jump to: [Field Metadata](#field-metadata), [FAQs](#faqs), [Contact](#contact)
 Jump to sections:
 [Identifier](#identifier), [When](#when), [What](#what), [Who](#who), [Where](#where), [Observation details](#observation-details), [Collection data](#collection-data), [Notes](#notes)
 
-Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), [`yyyy2`](#yyyy2), [`mm2`](#mm2), [`dd2`](#dd2), [`obDATEverbatim`](#obdateverbatim), [`SCNAME`](#scname), [`COMMON NAME`](#common-name), [`NAMETEMP`](#nametemp), [`NOTETAX`](#notetax), [`OBSERVER`](#observer), [`IDENTBY`](#identby), [`LATDEC`](#latdec), [`LONDEC`](#londec), [`LATDEC2`](#latdec2), [`LONDEC2`](#londec2),[`_NOTELOCcoordinates`](#noteloccoordinates),[`LOCUNCM`](#locuncm),[`_NOTELOClocuncm`](#noteloclocuncm) ,[`SURVEYSITE`](#surveysite) ,[`_NOTELOCsurveysite`](#notelocsurveysite) ,[`DIRECTIONS`](#directions) ,[`_NOTELOCdirections`](#notelocdirections) ,[`SITECODE`](#sitecode) ,[`ELEVmin`](#elevmin),[`OBEVID`](#obevid) ,[`OBABUN`](#obabun) ,[`OBABUNSITE`](#obabunsite) ,[`OBCOUNT`](#obcount) ,[`OBASSP`](#obassp) ,[`OBDESC`](#obdesc) ,[`OBACTIV`](#obactiv) ,[`OBPHEN`](#obphen) ,[`OBSEX`](#obsex) ,[`HABITAT`](#habitat) ,[`OBTHREAT`](#obthreat) ,[`ENVIRONMENTAL`](#environmental) ,[`URL`](#url) ,[`PROJECT`](#project) ,[`PROTOCOL`](#protocol),[`COLLECTION`](#collection) ,[`COLLNUM`](#collnum) ,[`COLLDUP`](#colldup) ,[`ACCNUM`](#accnum),[`NOTE1`](#note1) ,[`NOTE2`](#note2)
+Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), [`yyyy2`](#yyyy2), [`mm2`](#mm2), [`dd2`](#dd2), [`obDATEverbatim`](#obdateverbatim), [`SCNAME`](#scname), [`COMMON NAME`](#common-name), [`NAMETEMP`](#nametemp), [`NOTETAX`](#notetax), [`OBSERVER`](#observer), [`IDENTBY`](#identby), [`LATDEC`](#latdec), [`LONDEC`](#londec), [`LATDEC2`](#latdec2), [`LONDEC2`](#londec2),[`_NOTELOCcoordinates`](#_noteloccoordinates),[`LOCUNCM`](#locuncm),[`_NOTELOClocuncm`](#_noteloclocuncm) ,[`SURVEYSITE`](#surveysite) ,[`_NOTELOCsurveysite`](#_notelocsurveysite) ,[`DIRECTIONS`](#directions) ,[`_NOTELOCdirections`](#_notelocdirections) ,[`SITECODE`](#sitecode) ,[`ELEVmin`](#elevmin),[`OBEVID`](#obevid) ,[`OBABUN`](#obabun) ,[`OBABUNSITE`](#obabunsite) ,[`OBCOUNT`](#obcount) ,[`OBASSP`](#obassp) ,[`OBDESC`](#obdesc) ,[`OBACTIV`](#obactiv) ,[`OBPHEN`](#obphen) ,[`OBSEX`](#obsex) ,[`HABITAT`](#habitat) ,[`OBTHREAT`](#obthreat) ,[`ENVIRONMENTAL`](#environmental) ,[`URL`](#url) ,[`PROJECT`](#project) ,[`PROTOCOL`](#protocol),[`COLLECTION`](#collection) ,[`COLLNUM`](#collnum) ,[`COLLDUP`](#colldup) ,[`ACCNUM`](#accnum),[`NOTE1`](#note1) ,[`NOTE2`](#note2)
 
 ### Identifier
 #### `REFNUM`
@@ -202,8 +202,8 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), 
 |           |   `_NOTELOCcoordinates`       |
 | -------------  |-------------|
 | **Definition** | Basis of coordinates and/or remark upon extent |
-| **Comments**   |       |
-| **Examples**   | `geolocation from GPS`|
+| **Comments**   |  Be as concise as possible.     |
+| **Examples**   | `geolocation from GPS`, `COORDS: phone`|
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | |
 
@@ -220,8 +220,8 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), 
 |           |     `_NOTELOClocuncm`     |
 | -------------  |-------------|
 | **Definition** | Further information on location uncertainty  |
-| **Comments**   |       |
-| **Examples**   | |
+| **Comments**   |  Be as concise as possible.     |
+| **Examples**   |`LOCUNCM: est. by AC CDC; phone GPS` |
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | |
 
@@ -238,7 +238,7 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), 
 |           |    `_NOTELOCsurveysite`      |
 | -------------  |-------------|
 | **Definition** | Further information about survey site.  |
-| **Comments**   |       |
+| **Comments**   |  Be as concise as possible.      |
 | **Examples**   | |
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | |
@@ -256,7 +256,7 @@ Jump to fields: [`REFNUM`](#refnum), [`YYYY`](#yyyy), [`MM`](#mm), [`DD`](#dd), 
 |           |   `_NOTELOCdirections`       |
 | -------------  |-------------|
 | **Definition** | Further information about directions  |
-| **Comments**   |       |
+| **Comments**   |   Be as concise as possible.     |
 | **Examples**   | |
 | **Data type**   | TEXT |
 | **Data validation restrictions**   | |
