@@ -1,4 +1,4 @@
-# Observation Submission Template
+# Observation Submission Template Reference Guide
 
 This is an observation submission template to use when providing data to the AC CDC.
 
