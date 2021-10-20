@@ -4,7 +4,7 @@ This repository contains an observation submission template to use when providin
 
 The template is found in the `templates/` folder: [`accdcTemplateOutsideSubmission.xlsx`](templates/accdcTemplateOutsideSubmission.xlsx).
 
-See the wiki for the reference guide:
+**See the wiki for the reference guide:**
 * [Field metadata](../../wiki/Field-metadata)
 * Field controlled vocabularies
 * Standards for complex observation types
@@ -21,7 +21,7 @@ Please provide us the data in whatever format you have. We will convert your dat
 
 ### I keep getting popups from Excel that prevent me from entering data into the template
 
-Popups occur when the data you enter does not match the data validation restrictions on the field. First, consult the field metadata. Then, clean your data so that it confirms to our data validation rules. As a last resort, you can adjust the data validation rules in the template file. Learn more about Excel data validation by reading the help file here: https://support.microsoft.com/en-us/office/apply-data-validation-to-cells-29fecbcc-d1b9-42c1-9d76-eff3ce5f7249
+Popups occur when the data you enter does not match the data validation restrictions on the field. First, consult the [field metadata](../../wiki/Field-metadata). Then, clean your data so that it confirms to our data validation rules. As a last resort, you can adjust the data validation rules in the template file. Learn more about Excel data validation by reading the help file here: https://support.microsoft.com/en-us/office/apply-data-validation-to-cells-29fecbcc-d1b9-42c1-9d76-eff3ce5f7249
 
 ### I don't understand the metadata! Help!
 
