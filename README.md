@@ -6,8 +6,10 @@ The template is found in the `templates/` folder: [`accdcTemplateOutsideSubmissi
 
 **See the wiki for the reference guide:**
 * [Field metadata](../../wiki/Field-metadata)
-* Field controlled vocabularies
-* Standards for complex observation types
+* [Field controlled vocabularies](../../wiki/Field-controlled-vocabularies)
+* [General data standards](../../wiki/General-data-standards)
+* [Standards for complex observation types](../../wiki/Standards-for-complex-observation-types)
+
 
 ## FAQs
 
