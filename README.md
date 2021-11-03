@@ -27,8 +27,8 @@ Popups occur when the data you enter does not match the data validation restrict
 
 ### I don't understand the metadata! Help!
 
-Email us with questions or if you need help! See http://accdc.com//en/contact-us.html.
+Please use our [discussion board](https://github.com/atlanticcanadacdc/template/discussions) to ask questions. We will get back to you as soon as possible!
 
 ## Contact
 
-Email us with questions or if you need help! See http://accdc.com//en/contact-us.html.
+Please use our [discussion board](https://github.com/atlanticcanadacdc/template/discussions) to contact us with questions, concerns, ideas, or other topics of discussion related to the data entry template. We will get back to you as soon as possible! Alternatively, see http://accdc.com/en/contact-us.html for our contact information.
