@@ -15,7 +15,7 @@ The template is found in the `templates/` folder: [`accdcTemplateOutsideSubmissi
 
 ### Can I provide my data to you using old versions of your submission template?
 
-We will accept data curated in older versions of our submission template in special cases. Please do your best to collect and curate your data using our newest template!
+We will accept data curated in older versions of our submission template. However, we ask that you please do your best to collect and curate your data using our newest template!
 
 ### What do I do if my coordinates are not in decimal degrees?
 
