@@ -4,6 +4,9 @@ This repository contains an observation submission template to use when providin
 
 The template is found in the `templates/` folder: [`accdcTemplateOutsideSubmission.xlsx`](templates/accdcTemplateOutsideSubmission.xlsx).
 
+Once you navigate to the [`accdcTemplateOutsideSubmission.xlsx` file page](templates/accdcTemplateOutsideSubmission.xlsx), click download in the top right-hand corner of your screen.
+![screenshot](https://user-images.githubusercontent.com/16246446/169142955-1fe88c97-410f-4c29-a667-9f91cb8354be.png)
+
 **See the wiki for the reference guide:**
 * [Field metadata](../../wiki/Field-metadata)
 * [Field controlled vocabularies](../../wiki/Field-controlled-vocabularies)
