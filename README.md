@@ -34,4 +34,4 @@ Please use our [discussion board](https://github.com/atlanticcanadacdc/template/
 
 ## Contact
 
-Please use our [discussion board](https://github.com/atlanticcanadacdc/template/discussions) to contact us with questions, concerns, ideas, or other topics of discussion related to the data entry template. We will get back to you as soon as possible! Alternatively, see http://accdc.com/en/contact-us.html for our contact information.
+Please use our [discussion board](https://github.com/atlanticcanadacdc/template/discussions) to contact us with questions, concerns, ideas, or other topics of discussion related to the data entry template. We will get back to you as soon as possible! Alternatively, send an email to [datasubmissions@accdc.ca](mailto:datasubmissions@accdc.ca). 
