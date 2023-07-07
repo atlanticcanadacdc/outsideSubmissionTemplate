@@ -5,7 +5,8 @@ This repository contains an observation submission template to use when providin
 The template is found in the `templates/` folder: [`accdcTemplateOutsideSubmission.xlsx`](templates/accdcTemplateOutsideSubmission.xlsx).
 
 Once you navigate to the [`accdcTemplateOutsideSubmission.xlsx` file page](templates/accdcTemplateOutsideSubmission.xlsx), click download in the top right-hand corner of your screen.
-![screenshot](https://user-images.githubusercontent.com/16246446/169142955-1fe88c97-410f-4c29-a667-9f91cb8354be.png)
+![imageDownload](https://github.com/atlanticcanadacdc/template/assets/16246446/3eac1efc-60e0-41ae-951d-2d3ab32f2a2c)
+
 
 **See the wiki for the reference guide:**
 * [Field metadata](../../wiki/Field-metadata)
